@@ -2,47 +2,45 @@
 """Generate an XMLTV EPG for the Italian news channel "Sky TG24".
 
 Sky publishes no XMLTV feed, and unlike the sister repos this channel cannot use Tivù la Guida:
-that is the free-to-air DTT guide and it lists 70 channels, none of them Sky. So the source here is
-the HTML schedule at guidatv.org, which carries what these repos exist for — a per-programme cover
-image, a category and a description — and which the IPTV provider's own feed does not supply
-usefully for Sky strands.
+that is the free-to-air DTT guide and it lists 70 channels, none of them Sky. So the source is
+Sky Italia's own guide API — the one behind guidatv.sky.it — which answers without a key.
+
+## Why Sky's own guide, and not guidatv.org (the source until 2 Nov 2026)
+
+guidatv.org was the first source and it cost the recordings their pictures. It carries a cover for
+about a third of programmes, and none at all for the bulletins that fill most of the day (Edicola,
+Preview, Buongiorno, Ore 13, Ore 20 …), so most of the DVR's Sky TG24 recordings fell back to the
+channel logo. Sky's guide names an image for EVERY programme. Measured 2 Nov: every strand's
+`pd-image/<uuid>/16-9/1024` answers 200.
+
+It also reaches two weeks ahead, where guidatv.org stopped at the day after tomorrow.
 
 ## Times are Italian, and stay Italian
 
 The channel is broadcast from Italy (Europe/Rome) and watched from Cyprus (Europe/Nicosia), an hour
-ahead for most of the year. The conversion is deliberately NOT done here. XMLTV timestamps carry
-their own UTC offset, so every time is parsed as Rome local and written with Rome's offset —
-+0100 in winter, +0200 in summer — and the player converts to wherever it is. Writing Cyprus times
-instead would be wrong twice over: it would break for anyone else, and it would break at each of
-the four moments a year when the two zones change clocks on different dates.
-
-ZoneInfo resolves the offset from the wall time, so this is correct across a DST boundary without
-a table of dates to maintain.
+ahead for most of the year. Sky's API answers in UTC; every time is converted to Rome and written
+with Rome's offset — +0100 in winter, +0200 in summer — and the player converts to wherever it is.
+That keeps the file in the same shape as before and as the sister repos.
 
 ## What the source gives, and what it does not
 
-guidatv.org addresses days by name — ieri, today, domani, dopodomani — so the guide reaches two
-days ahead and no further. The sister repos ask for seven. There is no paging parameter to raise
-it; this is the ceiling of the source, not a setting.
-
-Today's page also TRIMS what has already finished: fetched at 11:00 it began at 11:00, leaving a
-five-hour hole behind it that no later fetch will ever fill. That matters for this channel in
-particular — it is the one recorded round the clock on the DVR, and a recording is named from the
-guide covering the moment it was made. So each run merges into the file already committed rather
-than replacing it, and the day accumulates. Anything that finished more than RETAIN_DAYS ago is
-dropped, so the file does not grow without end.
+The API refuses any date before today ("Dates validation has failed"), so the hours already aired
+exist only in the file committed by earlier runs. Each run therefore merges: the committed guide is
+kept for everything BEFORE the first programme the API returned, and the API is the authority from
+there on — so a programme Sky reschedules does not linger as a ghost beside its replacement. This
+matters because this is the channel the DVR records round the clock, and a recording is named from
+the guide covering it. Anything that finished more than RETAIN_DAYS ago is dropped.
 
 Stdlib only — no pip install, runs on a stock GitHub Actions runner.
 """
 
-import html
-import os
+import json
 import re
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape
 from zoneinfo import ZoneInfo
@@ -53,115 +51,77 @@ CHANNEL_NAME = "Sky TG24"
 CHANNEL_LOGO = ("https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/"
                 "sky-tg24-it.png")
 ROME = ZoneInfo("Europe/Rome")
-BASE = "https://guidatv.org/canali/sky-tg24"
-# The only days the site exposes. Yesterday is included so a programme that began before midnight
-# and runs into today is not lost — its card lives on yesterday's page, not today's.
-PAGES = [("ieri", -1), ("", 0), ("domani", 1), ("dopodomani", 2)]
+API = "https://apid.sky.it/gtv/v1/events"
+SKY_CHANNEL = 9117                    # Sky TG24 in /gtv/v1/channels?env=DTH (number 500, sk 521)
+IMAGE_BASE = "https://it.imageservice.sky.com/pd-image"
+DAYS_AHEAD = 8                        # the sister repos carry a week; Sky publishes ~two
+PAGE_SIZE = 999
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 "
       "(KHTML, like Gecko) Version/17.0 Safari/605.1.15")
 OUT = "skytg24.xml"
-DEFAULT_MINUTES = 30                  # when the card names no duration and nothing follows it
 RETAIN_DAYS = 3                       # how much already-broadcast guide to keep when merging
-
-# --- the page's shape ---------------------------------------------------------------------------
-# One <h3 class="hour"> per programme, each followed by its card. Measured 47 of each on a sample
-# day, pairing exactly, which is what makes splitting on the headings safe.
-HOUR = re.compile(r'<h3[^>]*class="[^"]*\bhour\b[^"]*"[^>]*>\s*(\d{1,2})[:.](\d{2})\s*</h3>')
-TITLE = re.compile(r'<h2[^>]*class="[^"]*\bcard-title\b[^"]*"[^>]*>(.*?)</h2>', re.S)
-MINUTES = re.compile(r'<p[^>]*class="[^"]*\bsubtitle\b[^"]*"[^>]*>\s*(\d+)\s*min', re.S)
-CATEGORY = re.compile(r'<span[^>]*class="[^"]*\btext-primary\b[^"]*"[^>]*>([^<]{2,40})</span>')
-DESC = re.compile(r'<p[^>]*class="[^"]*\bprogram-description\b[^"]*"[^>]*>(.*?)</p>', re.S)
-# Covers go through Next.js's image proxy; the real file is the url= parameter and it is a plain,
-# non-expiring URL. The proxy form is useless to anyone but guidatv.org, so it is decoded here.
-IMAGE = re.compile(r'src="/_next/image\?url=([^&"]+)')
 
 
 class Unreachable(Exception):
     """The source did not answer, or answered with something that is not the schedule."""
 
 
-def fetch(path: str) -> str:
-    """One day's HTML.
+def fetch() -> list[tuple]:
+    """Every programme from the start of today (UTC) to DAYS_AHEAD out, as rows.
 
-    Raises Unreachable rather than returning junk. The check is that we are still ON the page we
-    asked for and that it contains this channel's schedule markup — not that the status was 200.
-    A site that redirects to a friendly error page answers 200 from the wrong URL, and a
-    status-code check waves that straight through.
+    Raises Unreachable rather than returning junk: a non-200, a body that is not JSON, or JSON
+    without the events list all mean we did not get the schedule. An empty list from a healthy
+    answer is returned as empty, and the caller treats that as a failure to read, not an outage.
     """
-    url = f"{BASE}/{path}" if path else BASE
-    req = urllib.request.Request(url, headers={"User-Agent": UA,
-                                               "Accept-Language": "it-IT,it;q=0.9"})
+    now = datetime.now(timezone.utc)
+    since = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    until = since + timedelta(days=DAYS_AHEAD)
+    events, page = [], 0
+    while True:
+        query = urllib.parse.urlencode({
+            "from": f"{since:%Y-%m-%dT%H:%M:%SZ}", "to": f"{until:%Y-%m-%dT%H:%M:%SZ}",
+            "pageSize": PAGE_SIZE, "pageNum": page, "env": "DTH", "channels": SKY_CHANNEL,
+        })
+        req = urllib.request.Request(f"{API}?{query}", headers={"User-Agent": UA})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                body = json.load(resp)
+        except (urllib.error.URLError, TimeoutError, ValueError) as exc:
+            raise Unreachable(f"Sky guide: {exc}") from exc
+        batch = body.get("events") if isinstance(body, dict) else None
+        if not isinstance(batch, list):
+            raise Unreachable(f"Sky guide answered without a schedule: {str(body)[:200]}")
+        events += batch
+        # Paged, though a fortnight of one channel (~60 a day) fits in one page as configured.
+        if not batch or len(events) >= int(body.get("total") or 0):
+            break
+        page += 1
+    return [row for row in map(to_row, events) if row]
+
+
+def to_row(event: dict) -> tuple | None:
+    """(start, stop, title, desc, category, icon), times in Rome, or None if unusable."""
     try:
-        with urllib.request.urlopen(req, timeout=45) as r:
-            page = r.read().decode("utf-8", errors="replace")
-            landed = r.geturl()
-    except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        raise Unreachable(f"{url}: {exc}") from exc
-
-    if "/canali/sky-tg24" not in urllib.parse.urlparse(landed).path:
-        raise Unreachable(f"{url}: diverted to {landed}")
-    if 'data-testid="channel-program-card"' not in page:
-        raise Unreachable(f"{url}: answered without any programme card")
-    return page
-
-
-def text(raw: str) -> str:
-    """Markup fragment → plain text."""
-    return html.unescape(re.sub(r"<[^>]+>", "", raw)).replace("\xa0", " ").strip()
-
-
-def parse_day(page: str, day: datetime) -> list:
-    """One page → [(start, stop, title, desc, category, icon)], times in Europe/Rome.
-
-    `day` is the date the page is FOR. A listing runs past midnight, so when a time goes backwards
-    the date is rolled forward; without that an overnight bulletin lands eighteen hours before the
-    programme in front of it and the whole evening sorts wrong.
-    """
-    marks = list(HOUR.finditer(page))
-    out = []
-    for i, mark in enumerate(marks):
-        chunk = page[mark.end():marks[i + 1].start() if i + 1 < len(marks) else len(page)]
-        title_match = TITLE.search(chunk)
-        if not title_match:
-            continue
-        title = text(title_match.group(1))
-        if not title:
-            continue
-
-        hour, minute = int(mark.group(1)), int(mark.group(2))
-        start = day.replace(hour=hour, minute=minute, second=0, microsecond=0)
-        if out and start <= out[-1][0]:
-            start += timedelta(days=1)
-
-        minutes = MINUTES.search(chunk)
-        stop = start + timedelta(minutes=int(minutes.group(1))) if minutes else None
-
-        desc_match = DESC.search(chunk)
-        desc = text(desc_match.group(1)) if desc_match else ""
-        cat_match = CATEGORY.search(chunk)
-        category = text(cat_match.group(1)) if cat_match else ""
-        # "Live" is a badge on whatever is on air at fetch time, not a genre — and it would be
-        # baked into a file read hours later.
-        if category.lower() in {"live", "on air"}:
-            category = ""
-
-        icon = ""
-        for candidate in IMAGE.findall(chunk):
-            url = html.unescape(urllib.parse.unquote(candidate))
-            if "img-guidatv.org" in url and "/loghi/" not in url:
-                icon = url
-                break
-
-        out.append([start, stop, title, desc, category, icon])
-
-    # Fill missing stops from the next start, so the guide has no holes for a player to render as
-    # dead air. The last programme of a page keeps whatever it has.
-    for i, row in enumerate(out):
-        if row[1] is None:
-            row[1] = out[i + 1][0] if i + 1 < len(out) else row[0] + timedelta(minutes=DEFAULT_MINUTES)
-        if row[1] <= row[0]:
-            row[1] = row[0] + timedelta(minutes=DEFAULT_MINUTES)
-    return [tuple(r) for r in out]
+        start = datetime.strptime(event["starttime"], "%Y-%m-%dT%H:%M:%SZ")
+        stop = datetime.strptime(event["endtime"], "%Y-%m-%dT%H:%M:%SZ")
+    except (KeyError, TypeError, ValueError):
+        return None
+    start = start.replace(tzinfo=timezone.utc).astimezone(ROME)
+    stop = stop.replace(tzinfo=timezone.utc).astimezone(ROME)
+    content = event.get("content") or {}
+    # `eventTitle` is the strand ("Stefania Andreoli"); `epgEventTitle` is sometimes the episode
+    # ("S7 Ep21 - Stories"), which reads worse as a recording's name.
+    title = (event.get("eventTitle") or content.get("contentTitle") or "").strip()
+    if not title or stop <= start:
+        return None
+    desc = (event.get("eventSynopsis") or "").strip()
+    category = ((content.get("subgenre") or {}).get("name")
+                or (content.get("genre") or {}).get("name") or "").strip()
+    # The content uuid IS the pd-image id. 16-9/1024 is the crop the apps and the recorder ask
+    # for (SkyImage.preferredCrop / preferred_crop); `cover` is missing for many ids.
+    uuid = (content.get("uuid") or "").strip()
+    icon = f"{IMAGE_BASE}/{uuid}/16-9/1024?territory=IT" if uuid else ""
+    return (start, stop, title, desc, category, icon)
 
 
 def read_committed() -> dict:
@@ -205,44 +165,40 @@ def committed_guide_ends() -> datetime | None:
 
 
 def main() -> int:
-    today = datetime.now(ROME).replace(hour=0, minute=0, second=0, microsecond=0)
-
-    # Start from what is already committed so the morning of today is not lost; a fresh fetch
-    # overwrites any programme it also carries, since the source is the authority on itself.
+    # Start from what is already committed so the hours already aired are not lost — Sky will not
+    # answer for them. From the first programme Sky returns onwards, Sky's answer replaces ours.
     programmes = read_committed()
-    carried = len(programmes)
-    failures = []
-    for path, offset in PAGES:
-        day = today + timedelta(days=offset)
-        try:
-            page = fetch(path)
-        except Unreachable as exc:
-            failures.append(str(exc))
-            print(f"  ! {exc}", file=sys.stderr)
-            continue
-        rows = parse_day(page, day)
-        if not rows:
-            # The page answered and looked like a schedule, so this is OUR failure to read it,
-            # not the site being down. Loud, and never silently amnestied below.
-            print(f"  ! {path or 'today'}: page had cards but nothing parsed — the markup moved",
-                  file=sys.stderr)
-            return 1
-        for row in rows:
-            programmes[(row[0], row[2])] = row     # pages overlap at the edges
-        print(f"  {path or 'today':11} {day:%Y-%m-%d}  {len(rows)} programme(s)")
-
-    if not programmes:
-        # Nothing answered. A scheduled job should not mail a failure every few hours for someone
-        # else's outage, so the committed guide stands — until it is nearly exhausted, at which
-        # point silence IS the problem.
+    try:
+        fresh = fetch()
+    except Unreachable as exc:
+        # A scheduled job should not mail a failure every few hours for someone else's outage, so
+        # the committed guide stands — until it is nearly exhausted, at which point silence IS
+        # the problem.
         ends = committed_guide_ends()
         if ends and ends - datetime.now(ROME) > timedelta(hours=24):
-            print(f"Source unreachable; keeping the committed guide, good until {ends:%Y-%m-%d %H:%M}.",
+            print(f"{exc}\nKeeping the committed guide, good until {ends:%Y-%m-%d %H:%M}.",
                   file=sys.stderr)
             return 0
-        print("Source unreachable AND the committed guide is nearly spent:\n  "
-              + "\n  ".join(failures), file=sys.stderr)
+        print(f"{exc}\nAND the committed guide is nearly spent.", file=sys.stderr)
         return 1
+    if not fresh:
+        # Sky answered with a well-formed but empty schedule for a 24-hour channel. That is
+        # not an outage to wait out; something about the request or the channel id moved.
+        print("  ! Sky answered with no programmes for Sky TG24 — has the channel id changed?",
+              file=sys.stderr)
+        return 1
+    first = min(row[0] for row in fresh)
+    # A strand keeps one picture, so what has already aired takes Sky's picture for the same
+    # title. That repairs the days written from guidatv.org, which had none for most bulletins
+    # and, now and then, another programme's.
+    pictures = {row[2]: row[5] for row in fresh if row[5]}
+    programmes = {k: r[:5] + (pictures.get(r[2], r[5]),)
+                  for k, r in programmes.items() if r[0] < first}
+    carried = len(programmes)
+    for row in fresh:
+        programmes[(row[0], row[2])] = row
+    print(f"  Sky guide: {len(fresh)} programme(s), {first:%d %b %H:%M} to "
+          f"{max(r[1] for r in fresh):%d %b %H:%M}")
 
     cutoff = datetime.now(ROME) - timedelta(days=RETAIN_DAYS)
     rows = sorted((r for r in programmes.values() if r[1] > cutoff), key=lambda r: r[0])
@@ -250,7 +206,7 @@ def main() -> int:
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<!DOCTYPE tv SYSTEM "xmltv.dtd">',
-        '<tv generator-info-name="skytg24-epg" source-info-name="guidatv.org">',
+        '<tv generator-info-name="skytg24-epg" source-info-name="Sky Italia guide">',
         f'  <channel id="{CHANNEL_ID}">',
         f'    <display-name>{escape(CHANNEL_NAME)}</display-name>',
         f'    <icon src="{escape(CHANNEL_LOGO)}" />',
@@ -276,8 +232,6 @@ def main() -> int:
     print(f"Wrote {OUT}: {len(rows)} programmes for {CHANNEL_NAME}, "
           f"{rows[0][0]:%d %b %H:%M} to {covered:%d %b %H:%M %Z} "
           f"({carried} carried over from the committed guide).")
-    if failures:
-        print(f"({len(failures)} page(s) did not answer; the rest were written.)", file=sys.stderr)
     return 0
 
 

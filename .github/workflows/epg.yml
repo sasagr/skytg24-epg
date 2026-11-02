@@ -1,6 +1,6 @@
 name: Generate Sky TG24 EPG
 
-# Rebuilds skytg24.xml from guidatv.org on a schedule and commits it when it changes.
+# Rebuilds skytg24.xml from Sky Italia's guide on a schedule and commits it when it changes.
 on:
   schedule:
     - cron: "5 */4 * * *"   # every 4 hours (UTC)
@@ -26,10 +26,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Every four hours rather than six, and the script merges into the committed file instead of
-      # replacing it. The source drops a programme from today's page the moment it has finished,
-      # so the only record of this morning is the run that saw it — and this is the channel the
-      # DVR records round the clock, where a recording is named from the guide covering it.
+      # The script merges into the committed file instead of replacing it: Sky will not answer for
+      # hours that have already aired, so the only record of them is the runs that saw them — and
+      # this is the channel the DVR records round the clock, where a recording is named from the
+      # guide covering it.
       - name: Generate skytg24.xml
         run: python generate.py
 
