@@ -390,15 +390,33 @@
     <desc lang="it">I quotidiani italiani e stranieri, i siti e i social nella rassegna di Sky TG24. Disponibile anche s...</desc>
     <category lang="it">Informazione</category>
   </programme>
+  <programme start="20261101093000 +0100" stop="20261101100000 +0100" channel="SkyTG24.it">
+    <title lang="it">Health</title>
+    <desc lang="it">Raffaella Cesaroni approfondisce i temi che riguardano le cure innovative, lo stato della ricerca, i...</desc>
+    <category lang="it">Informazione</category>
+    <icon src="https://img-guidatv.org/20/health/6.jpg" />
+  </programme>
   <programme start="20261101100000 +0100" stop="20261101103000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Agenda</title>
     <desc lang="it">La settimana che sta per cominciare, letta in anteprima per raccontare il contesto, le notizie e i d...</desc>
     <category lang="it">News</category>
   </programme>
+  <programme start="20261101100000 +0100" stop="20261101103000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 mezz'ora</title>
+    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
+    <category lang="it">News</category>
+    <icon src="https://img-guidatv.org/20/tg24-mezz-ora/1.jpg" />
+  </programme>
   <programme start="20261101103000 +0100" stop="20261101110000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Agenda</title>
     <desc lang="it">La settimana che sta per cominciare, letta in anteprima per raccontare il contesto, le notizie e i d...</desc>
     <category lang="it">News</category>
+  </programme>
+  <programme start="20261101103000 +0100" stop="20261101110000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 mezz'ora</title>
+    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
+    <category lang="it">News</category>
+    <icon src="https://img-guidatv.org/20/tg24-mezz-ora/1.jpg" />
   </programme>
   <programme start="20261101110000 +0100" stop="20261101113500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Progress</title>
@@ -590,7 +608,7 @@
     <desc lang="it">Telegiornale.</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261101210000 +0100" stop="20261101212500 +0100" channel="SkyTG24.it">
+  <programme start="20261101210000 +0100" stop="20261101213000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1042,7 +1060,7 @@
     <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
     <category lang="it">News</category>
   </programme>
-  <programme start="20261103060000 +0100" stop="20261103062500 +0100" channel="SkyTG24.it">
+  <programme start="20261103060000 +0100" stop="20261103062800 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Pagine</title>
     <desc lang="it">I quotidiani italiani e stranieri, i siti e i social nella rassegna di Sky TG24. Disponibile anche s...</desc>
     <category lang="it">Informazione</category>
@@ -1062,7 +1080,7 @@
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico:...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103070000 +0100" stop="20261103072000 +0100" channel="SkyTG24.it">
+  <programme start="20261103070000 +0100" stop="20261103072300 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Buongiorno</title>
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico:...</desc>
     <category lang="it">Informazione</category>
@@ -1082,7 +1100,7 @@
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico:...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103080000 +0100" stop="20261103082000 +0100" channel="SkyTG24.it">
+  <programme start="20261103080000 +0100" stop="20261103082300 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Buongiorno</title>
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico:...</desc>
     <category lang="it">Informazione</category>
@@ -1102,7 +1120,7 @@
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico:...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103090000 +0100" stop="20261103092000 +0100" channel="SkyTG24.it">
+  <programme start="20261103090000 +0100" stop="20261103092300 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Buongiorno</title>
     <desc lang="it">Le notizie in primo piano, dall'Italia e dal mondo. Approfondimenti, giornali, web, meteo, traffico:...</desc>
     <category lang="it">Informazione</category>
@@ -1132,7 +1150,7 @@
     <desc lang="it">Tutte le mattine, dal nostro studio in Piazza Montecitorio, Giovanna Pancheri incontra i politici, i...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103110000 +0100" stop="20261103112500 +0100" channel="SkyTG24.it">
+  <programme start="20261103110000 +0100" stop="20261103111100 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1164,7 +1182,7 @@
     <desc lang="it">Telegiornale in diretta. La domanda del giorno, lo Sport, il Meteo.</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103123000 +0100" stop="20261103125500 +0100" channel="SkyTG24.it">
+  <programme start="20261103123000 +0100" stop="20261103125800 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1185,7 +1203,7 @@
     <desc lang="it">Telegiornale in diretta. Le notizie della giornata raccontate con collegamenti live e approfondiment...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103133000 +0100" stop="20261103135000 +0100" channel="SkyTG24.it">
+  <programme start="20261103133000 +0100" stop="20261103135200 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 13</title>
     <desc lang="it">Telegiornale in diretta. Le notizie della giornata raccontate con collegamenti live e approfondiment...</desc>
     <category lang="it">Informazione</category>
@@ -1227,7 +1245,7 @@
     <desc lang="it">E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Appr...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103163000 +0100" stop="20261103165000 +0100" channel="SkyTG24.it">
+  <programme start="20261103163000 +0100" stop="20261103165300 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1243,7 +1261,7 @@
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazional...</desc>
     <category lang="it">Meteo</category>
   </programme>
-  <programme start="20261103170000 +0100" stop="20261103171000 +0100" channel="SkyTG24.it">
+  <programme start="20261103170000 +0100" stop="20261103171300 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1275,7 +1293,7 @@
     <desc lang="it">Il commento dell’attualità attraverso dati e fact checking. Con Alessandro Marenzi.</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103190000 +0100" stop="20261103191000 +0100" channel="SkyTG24.it">
+  <programme start="20261103190000 +0100" stop="20261103191100 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1323,7 +1341,7 @@
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e...</desc>
     <category lang="it">Informazione</category>
   </programme>
-  <programme start="20261103203000 +0100" stop="20261103205000 +0100" channel="SkyTG24.it">
+  <programme start="20261103203000 +0100" stop="20261103205200 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 20</title>
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e...</desc>
     <category lang="it">Informazione</category>
@@ -1366,7 +1384,7 @@
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazional...</desc>
     <category lang="it">Meteo</category>
   </programme>
-  <programme start="20261103220000 +0100" stop="20261103221500 +0100" channel="SkyTG24.it">
+  <programme start="20261103220000 +0100" stop="20261103223000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
@@ -1552,6 +1570,11 @@
     <desc lang="it">I quotidiani italiani e stranieri, i siti e i social nella rassegna di Sky TG24. Disponibile anche s...</desc>
     <category lang="it">Informazione</category>
   </programme>
+  <programme start="20261104060000 +0100" stop="20261104063000 +0100" channel="SkyTG24.it">
+    <title lang="it">Midterm 2026: L'America al voto</title>
+    <desc lang="it">Seguiamo gli aggiornamenti delle elezioni di metà mandato negli Stati Uniti.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
   <programme start="20261104062800 +0100" stop="20261104063000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
@@ -1629,6 +1652,12 @@
     <category lang="it">Mondo E Tendenze</category>
     <icon src="https://img-guidatv.org/20/drive-club/6.jpg" />
   </programme>
+  <programme start="20261104111100 +0100" stop="20261104112800 +0100" channel="SkyTG24.it">
+    <title lang="it">Incipit</title>
+    <desc lang="it">Esce per Bollati Boringhieri il nuovo romanzo dello scrittore toscano con protagonista uno dei più r...</desc>
+    <category lang="it">Mondo E Tendenze</category>
+    <icon src="https://img-guidatv.org/20/incipit/5.jpg" />
+  </programme>
   <programme start="20261104112800 +0100" stop="20261104113000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
@@ -1696,6 +1725,12 @@
     <title lang="it">Timeline</title>
     <desc lang="it">E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Appr...</desc>
     <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20261104160000 +0100" stop="20261104163000 +0100" channel="SkyTG24.it">
+    <title lang="it">Generazione Europa</title>
+    <desc lang="it">Generazione Europa - Lo spazio di approfondimento di Sky TG24 dedicato alle nuove sfide dell’Europa ...</desc>
+    <category lang="it">Informazione</category>
+    <icon src="https://img-guidatv.org/20/generazione-europa/0.jpg" />
   </programme>
   <programme start="20261104163000 +0100" stop="20261104165300 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
@@ -1789,11 +1824,21 @@
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazional...</desc>
     <category lang="it">Meteo</category>
   </programme>
-  <programme start="20261104220000 +0100" stop="20261104223000 +0100" channel="SkyTG24.it">
+  <programme start="20261104220000 +0100" stop="20261104221400 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">News</category>
     <icon src="https://img-guidatv.org/20/tg24-mezz-ora/1.jpg" />
+  </programme>
+  <programme start="20261104221400 +0100" stop="20261104221600 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Preview</title>
+    <desc lang="it">TG24 Preview</desc>
+    <category lang="it">News</category>
+  </programme>
+  <programme start="20261104221600 +0100" stop="20261104230000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Economia</title>
+    <desc lang="it">L'appuntamento quotidiano con l'approfondimento delle principali notizie economiche della giornata. ...</desc>
+    <category lang="it">Informazione</category>
   </programme>
   <programme start="20261104223000 +0100" stop="20261104230000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (22:30-23:00)</title>
@@ -1807,11 +1852,26 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-23-00-23-30/0.jpg" />
   </programme>
+  <programme start="20261104230000 +0100" stop="20261104233000 +0100" channel="SkyTG24.it">
+    <title lang="it">Skyline</title>
+    <desc lang="it">Con Skyline, dal lunedi' al venerdi', vi portiamo dentro tutte le notizie della giornata. Una scansi...</desc>
+    <category lang="it">Informazione</category>
+  </programme>
   <programme start="20261104233000 +0100" stop="20261105000000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (23:30-00:00)</title>
     <desc lang="it">Ep3 Midterm 2026 - L'america Al Voto (23:30-00:00) - Midterm 2026 - L'america Al Voto...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-23-30-00-00/0.jpg" />
+  </programme>
+  <programme start="20261104233000 +0100" stop="20261104235300 +0100" channel="SkyTG24.it">
+    <title lang="it">Skyline</title>
+    <desc lang="it">Con Skyline, dal lunedi' al venerdi', vi portiamo dentro tutte le notizie della giornata. Una scansi...</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20261104235300 +0100" stop="20261105000000 +0100" channel="SkyTG24.it">
+    <title lang="it">Sky Meteo24</title>
+    <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazional...</desc>
+    <category lang="it">Meteo</category>
   </programme>
   <programme start="20261105000000 +0100" stop="20261105003000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (00:00-00:30)</title>
@@ -1819,11 +1879,21 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-00-00-00-30/0.jpg" />
   </programme>
+  <programme start="20261105000000 +0100" stop="20261105003000 +0100" channel="SkyTG24.it">
+    <title lang="it">Skyline</title>
+    <desc lang="it">Con Skyline, dal lunedi' al venerdi', vi portiamo dentro tutte le notizie della giornata. Una scansi...</desc>
+    <category lang="it">Informazione</category>
+  </programme>
   <programme start="20261105003000 +0100" stop="20261105010000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (00:30-01:00)</title>
     <desc lang="it">Ep5 Midterm 2026 - L'america Al Voto (00:30-01:00) - Ep5 Midterm 2026 - L'america Al Voto (00:30-01:...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-00-30-01-00/0.jpg" />
+  </programme>
+  <programme start="20261105003000 +0100" stop="20261105010000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
   </programme>
   <programme start="20261105010000 +0100" stop="20261105013000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (01:00-01:30)</title>
@@ -1831,11 +1901,21 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-01-00-01-30/0.jpg" />
   </programme>
+  <programme start="20261105010000 +0100" stop="20261105013000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
+  </programme>
   <programme start="20261105013000 +0100" stop="20261105020000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (01:30-02:00)</title>
     <desc lang="it">Ep7 Midterm 2026 - L'america Al Voto (01:30-02:00) - Midterm 2026 - L'america Al Voto...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-01-30-02-00/0.jpg" />
+  </programme>
+  <programme start="20261105013000 +0100" stop="20261105020000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
   </programme>
   <programme start="20261105020000 +0100" stop="20261105023000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (02:00-02:30)</title>
@@ -1843,11 +1923,21 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-02-00-02-30/0.jpg" />
   </programme>
+  <programme start="20261105020000 +0100" stop="20261105023000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
+  </programme>
   <programme start="20261105023000 +0100" stop="20261105030000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (02:30-03:00)</title>
     <desc lang="it">Ep9 Midterm 2026 - L'america Al Voto (02:30-03:00) - Midterm 2026 - L'america Al Voto...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-02-30-03-00/0.jpg" />
+  </programme>
+  <programme start="20261105023000 +0100" stop="20261105030000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
   </programme>
   <programme start="20261105030000 +0100" stop="20261105033000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (03:00-03:30)</title>
@@ -1855,11 +1945,21 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-03-00-03-30/0.jpg" />
   </programme>
+  <programme start="20261105030000 +0100" stop="20261105033000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
+  </programme>
   <programme start="20261105033000 +0100" stop="20261105040000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (03:30-04:00)</title>
     <desc lang="it">Ep11 Midterm 2026 - L'america Al Voto (03:30-04:00) - Ep11 Midterm 2026 - L'america Al Voto (03:30-0...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-03-30-04-00/0.jpg" />
+  </programme>
+  <programme start="20261105033000 +0100" stop="20261105040000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
   </programme>
   <programme start="20261105040000 +0100" stop="20261105043000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (04:00-04:30)</title>
@@ -1867,11 +1967,21 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-04-00-04-30/0.jpg" />
   </programme>
+  <programme start="20261105040000 +0100" stop="20261105043000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
+  </programme>
   <programme start="20261105043000 +0100" stop="20261105050000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (04:30-05:00)</title>
     <desc lang="it">Ep13 Midterm 2026 - L'america Al Voto (04:30-05:00) - Ep13 Midterm 2026 - L'america Al Voto (04:30-0...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-04-30-05-00/0.jpg" />
+  </programme>
+  <programme start="20261105043000 +0100" stop="20261105050000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
   </programme>
   <programme start="20261105050000 +0100" stop="20261105053000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (05:00-05:30)</title>
@@ -1879,10 +1989,21 @@
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-05-00-05-30/0.jpg" />
   </programme>
+  <programme start="20261105050000 +0100" stop="20261105053000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
+  </programme>
   <programme start="20261105053000 +0100" stop="20261105060000 +0100" channel="SkyTG24.it">
     <title lang="it">Midterm 2026 - L'america Al Voto (05:30-06:00)</title>
     <desc lang="it">Ep15 Midterm 2026 - L'america Al Voto (05:30-06:00) - Midterm 2026 - L'america Al Voto...</desc>
     <category lang="it">Informazione</category>
     <icon src="https://img-guidatv.org/20/midterm-2026-l-america-al-voto-05-30-06-00/0.jpg" />
+  </programme>
+  <programme start="20261105053000 +0100" stop="20261105060000 +0100" channel="SkyTG24.it">
+    <title lang="it">TG24 Edicola</title>
+    <desc lang="it">Telegiornale con la lettura dei principali quotidiani.</desc>
+    <category lang="it">News</category>
+    <icon src="https://img-guidatv.org/20/tg24-mezz-ora/1.jpg" />
   </programme>
 </tv>
