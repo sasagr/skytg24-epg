@@ -5,120 +5,6 @@
     <display-name>Sky TG24</display-name>
     <icon src="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/sky-tg24-it.png" />
   </channel>
-  <programme start="20261110125500 +0100" stop="20261110130000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 Preview</title>
-    <desc lang="it">TG24 Preview</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110130000 +0100" stop="20261110133000 +0100" channel="SkyTG24.it">
-    <title lang="it">Ore 13</title>
-    <desc lang="it">Le notizie della giornata raccontate con collegamenti live e approfondimenti. Con una finestra sul nostro Paese. E, sempre, il fatto principale del giorno analizzato e commentato da un esperto.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/72025f36-48ae-4177-9000-b60681dc9aff/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110133000 +0100" stop="20261110135000 +0100" channel="SkyTG24.it">
-    <title lang="it">Ore 13</title>
-    <desc lang="it">Le notizie della giornata raccontate con collegamenti live e approfondimenti. Con una finestra sul nostro Paese. E, sempre, il fatto principale del giorno analizzato e commentato da un esperto.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/72025f36-48ae-4177-9000-b60681dc9aff/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110135000 +0100" stop="20261110140000 +0100" channel="SkyTG24.it">
-    <title lang="it">Extra Time</title>
-    <desc lang="it">Telegiornale.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/1fbba515-6652-474a-93db-53c0cc2d631f/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110140000 +0100" stop="20261110143000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110143000 +0100" stop="20261110150000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110150000 +0100" stop="20261110153000 +0100" channel="SkyTG24.it">
-    <title lang="it">Timeline</title>
-    <desc lang="it">E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Approfondire. Interagire.</desc>
-    <category lang="it">News</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/e73667f4-d771-4b0d-9ee3-c896bb78d086/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110153000 +0100" stop="20261110160000 +0100" channel="SkyTG24.it">
-    <title lang="it">Timeline</title>
-    <desc lang="it">E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Approfondire. Interagire.</desc>
-    <category lang="it">News</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/e73667f4-d771-4b0d-9ee3-c896bb78d086/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110160000 +0100" stop="20261110163000 +0100" channel="SkyTG24.it">
-    <title lang="it">Timeline</title>
-    <desc lang="it">E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Approfondire. Interagire.</desc>
-    <category lang="it">News</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/e73667f4-d771-4b0d-9ee3-c896bb78d086/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110163000 +0100" stop="20261110165000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110165000 +0100" stop="20261110170000 +0100" channel="SkyTG24.it">
-    <title lang="it">Sky Meteo24</title>
-    <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
-    <category lang="it">News</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/2a13b983-3936-4e0d-a17d-b64d011abb5b/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110170000 +0100" stop="20261110174500 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 Economia</title>
-    <desc lang="it">L'appuntamento quotidiano con l'approfondimento delle principali notizie economiche della giornata. Conduce Andrea Bignami.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/e6241d0c-0dee-4d1c-94c9-fd8d4a434196/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110174500 +0100" stop="20261110180000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110180000 +0100" stop="20261110183000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110183000 +0100" stop="20261110190000 +0100" channel="SkyTG24.it">
-    <title lang="it">Numeri</title>
-    <desc lang="it">Il commento dell'attualita' attraverso dati e fact checking. Con Alessandro Marenzi.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/89e13fe2-445d-4ea2-a614-fa5a50b6e0da/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110190000 +0100" stop="20261110191000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110191000 +0100" stop="20261110191500 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 Preview</title>
-    <desc lang="it">TG24 Preview</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110191500 +0100" stop="20261110195500 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mondo</title>
-    <desc lang="it">Ogni giorno il giro del mondo. Come cambiano gli equilibri internazionali, dove stiamo andando e quali sono i problemi dei popoli che ci circondano.</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/411dc5d5-656d-46f5-ba70-640756fce2a4/16-9/1024?territory=IT" />
-  </programme>
-  <programme start="20261110195500 +0100" stop="20261110200000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 Preview</title>
-    <desc lang="it">TG24 Preview</desc>
-    <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
-  </programme>
   <programme start="20261110200000 +0100" stop="20261110203000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 20</title>
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e analisi. Interviste e inchieste esclusive, i principali fatti del giorno aggiornati in tempo reale.</desc>
@@ -1409,25 +1295,25 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114063000 +0100" stop="20261114065800 +0100" channel="SkyTG24.it">
+  <programme start="20261114063000 +0100" stop="20261114065500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Pagine</title>
     <desc lang="it">I quotidiani italiani e stranieri, i siti e i social nella rassegna di Sky TG24. Disponibile anche sul sito e su tutte le piattaforme.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/2cf17e23-fc9b-497b-ba0f-46cdca4aaa5c/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114065800 +0100" stop="20261114070000 +0100" channel="SkyTG24.it">
+  <programme start="20261114065500 +0100" stop="20261114070000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114070000 +0100" stop="20261114072300 +0100" channel="SkyTG24.it">
+  <programme start="20261114070000 +0100" stop="20261114072000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114072300 +0100" stop="20261114073000 +0100" channel="SkyTG24.it">
+  <programme start="20261114072000 +0100" stop="20261114073000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1439,13 +1325,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/2cf17e23-fc9b-497b-ba0f-46cdca4aaa5c/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114080000 +0100" stop="20261114082300 +0100" channel="SkyTG24.it">
+  <programme start="20261114080000 +0100" stop="20261114082000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114082300 +0100" stop="20261114083000 +0100" channel="SkyTG24.it">
+  <programme start="20261114082000 +0100" stop="20261114083000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1499,13 +1385,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/65a502a6-c03f-4a15-b260-4442210fafa6/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114123000 +0100" stop="20261114125800 +0100" channel="SkyTG24.it">
+  <programme start="20261114123000 +0100" stop="20261114125500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114125800 +0100" stop="20261114130000 +0100" channel="SkyTG24.it">
+  <programme start="20261114125500 +0100" stop="20261114130000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
@@ -1517,13 +1403,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/72025f36-48ae-4177-9000-b60681dc9aff/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114133000 +0100" stop="20261114135200 +0100" channel="SkyTG24.it">
+  <programme start="20261114133000 +0100" stop="20261114135000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 13</title>
     <desc lang="it">Le notizie della giornata raccontate con collegamenti live e approfondimenti. Con una finestra sul nostro Paese. E, sempre, il fatto principale del giorno analizzato e commentato da un esperto.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/72025f36-48ae-4177-9000-b60681dc9aff/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114135230 +0100" stop="20261114135930 +0100" channel="SkyTG24.it">
+  <programme start="20261114135000 +0100" stop="20261114140000 +0100" channel="SkyTG24.it">
     <title lang="it">Extra Time</title>
     <desc lang="it">Telegiornale.</desc>
     <category lang="it">Notiziario</category>
@@ -1542,18 +1428,18 @@
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261114150000 +0100" stop="20261114153000 +0100" channel="SkyTG24.it">
-    <title lang="it">Programmazione non disponibile</title>
-    <desc lang="it">BLOCCO REGISTRATO - TBD</desc>
-    <category lang="it">Fiction</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/a66dc379-a517-48cd-8e58-587794b0f617/16-9/1024?territory=IT" />
+    <title lang="it">Ondata di caldo, aria condizonata: Lusso o bene indispensabile?</title>
+    <desc lang="it">S1 Ep137 Ondata di caldo, aria condizonata: Lusso o bene indispensabile? - Un appuntamento quotidiano con la redazione di Sky TG24: un tema al giorno, tra le notizie piu' rilevanti, per leggere l'attualita'.</desc>
+    <category lang="it">Notiziario</category>
+    <icon src="https://it.imageservice.sky.com/pd-image/6799dd68-2a71-4b3a-9b80-a3e9a04dc4c1/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114153000 +0100" stop="20261114154200 +0100" channel="SkyTG24.it">
+  <programme start="20261114153000 +0100" stop="20261114154000 +0100" channel="SkyTG24.it">
     <title lang="it">Ep.23</title>
     <desc lang="it">S7 Ep23 - La rubrica di Sky TG24 dedicata alla mobilita'. Si parla di prove su strada, sostenibilita', con interviste ai manager del mondo dell'automobile e spazio alle supercar che fanno sognare.</desc>
     <category lang="it">Magazine</category>
     <icon src="https://it.imageservice.sky.com/pd-image/6e1130c6-804c-4081-8c3b-10976adbfdfe/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114154231 +0100" stop="20261114155931 +0100" channel="SkyTG24.it">
+  <programme start="20261114154000 +0100" stop="20261114160000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
@@ -1565,13 +1451,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/512917bb-875f-4a39-b14d-b0692ce3a0db/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114163000 +0100" stop="20261114165300 +0100" channel="SkyTG24.it">
+  <programme start="20261114163000 +0100" stop="20261114165000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114165300 +0100" stop="20261114170000 +0100" channel="SkyTG24.it">
+  <programme start="20261114165000 +0100" stop="20261114170000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1589,19 +1475,19 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114180000 +0100" stop="20261114183000 +0100" channel="SkyTG24.it">
+  <programme start="20261114180000 +0100" stop="20261114182500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114183000 +0100" stop="20261114185800 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
+  <programme start="20261114182500 +0100" stop="20261114185500 +0100" channel="SkyTG24.it">
+    <title lang="it">Che Mondo Lasciamo Ai Nostri Figli?</title>
+    <desc lang="it">S1 Ep138 Che Mondo Lasciamo Ai Nostri Figli? - Un appuntamento quotidiano con la redazione di Sky TG24: un tema al giorno, tra le notizie piu' rilevanti, per leggere l'attualita'.</desc>
     <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
+    <icon src="https://it.imageservice.sky.com/pd-image/9f68a473-44d6-41cb-8365-2da981b561d5/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114185800 +0100" stop="20261114190000 +0100" channel="SkyTG24.it">
+  <programme start="20261114185500 +0100" stop="20261114190000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
@@ -1613,31 +1499,31 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114193000 +0100" stop="20261114195600 +0100" channel="SkyTG24.it">
+  <programme start="20261114193000 +0100" stop="20261114195500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114195600 +0100" stop="20261114195800 +0100" channel="SkyTG24.it">
+  <programme start="20261114195500 +0100" stop="20261114200000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114195800 +0100" stop="20261114203000 +0100" channel="SkyTG24.it">
+  <programme start="20261114200000 +0100" stop="20261114203000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 20</title>
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e analisi. Interviste e inchieste esclusive, i principali fatti del giorno aggiornati in tempo reale.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/49fecad2-0545-424d-a0d4-e97561f7a103/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114203000 +0100" stop="20261114205200 +0100" channel="SkyTG24.it">
+  <programme start="20261114203000 +0100" stop="20261114205000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 20</title>
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e analisi. Interviste e inchieste esclusive, i principali fatti del giorno aggiornati in tempo reale.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/49fecad2-0545-424d-a0d4-e97561f7a103/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114205230 +0100" stop="20261114205930 +0100" channel="SkyTG24.it">
+  <programme start="20261114205000 +0100" stop="20261114210000 +0100" channel="SkyTG24.it">
     <title lang="it">Extra Time</title>
     <desc lang="it">Telegiornale.</desc>
     <category lang="it">Notiziario</category>
@@ -1649,17 +1535,17 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114211500 +0100" stop="20261114213200 +0100" channel="SkyTG24.it">
-    <title lang="it">Countdown - Dallo Spazio Alla Terra Stg.6 Ep.1 - 14/11/2026</title>
-    <desc lang="it">S6 Ep1 Countdown - Dallo Spazio Alla Terra Stg.6 Ep.1 - 14/11/2026 - Si analizza perche' lo Spazio e' diventato cosi' importante per la Terra. Tra gli ospiti: astronauti, esperti, premi Nobel, ingegneri, astrofisici e leader d'impresa, per conoscere le realta' industriali piu' innovative del settore spaziale.</desc>
+  <programme start="20261114211500 +0100" stop="20261114213000 +0100" channel="SkyTG24.it">
+    <title lang="it">Ep.1</title>
+    <desc lang="it">S6 Ep1 - Si analizza perche' lo Spazio e' diventato cosi' importante per la Terra. Tra gli ospiti: astronauti, esperti, premi Nobel, ingegneri, astrofisici e leader d'impresa, per conoscere le realta' industriali piu' innovative del settore spaziale.</desc>
     <category lang="it">Scienza</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f4535807-185e-4e40-8bfd-c166470b4bd5/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114213200 +0100" stop="20261114220000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
+  <programme start="20261114213000 +0100" stop="20261114220000 +0100" channel="SkyTG24.it">
+    <title lang="it">Ondata di caldo, aria condizonata: Lusso o bene indispensabile?</title>
+    <desc lang="it">S1 Ep137 Ondata di caldo, aria condizonata: Lusso o bene indispensabile? - Un appuntamento quotidiano con la redazione di Sky TG24: un tema al giorno, tra le notizie piu' rilevanti, per leggere l'attualita'.</desc>
     <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
+    <icon src="https://it.imageservice.sky.com/pd-image/6799dd68-2a71-4b3a-9b80-a3e9a04dc4c1/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261114220000 +0100" stop="20261114223000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
@@ -1667,13 +1553,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114223000 +0100" stop="20261114225800 +0100" channel="SkyTG24.it">
+  <programme start="20261114223000 +0100" stop="20261114225500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114225800 +0100" stop="20261114230000 +0100" channel="SkyTG24.it">
+  <programme start="20261114225500 +0100" stop="20261114230000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
@@ -1685,13 +1571,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114233000 +0100" stop="20261114235300 +0100" channel="SkyTG24.it">
+  <programme start="20261114233000 +0100" stop="20261114235000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261114235300 +0100" stop="20261115000000 +0100" channel="SkyTG24.it">
+  <programme start="20261114235000 +0100" stop="20261115000000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1775,25 +1661,25 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115063000 +0100" stop="20261115065800 +0100" channel="SkyTG24.it">
+  <programme start="20261115063000 +0100" stop="20261115065500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Pagine</title>
     <desc lang="it">I quotidiani italiani e stranieri, i siti e i social nella rassegna di Sky TG24. Disponibile anche sul sito e su tutte le piattaforme.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/2cf17e23-fc9b-497b-ba0f-46cdca4aaa5c/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115065800 +0100" stop="20261115070000 +0100" channel="SkyTG24.it">
+  <programme start="20261115065500 +0100" stop="20261115070000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115070000 +0100" stop="20261115072300 +0100" channel="SkyTG24.it">
+  <programme start="20261115070000 +0100" stop="20261115072000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115072300 +0100" stop="20261115073000 +0100" channel="SkyTG24.it">
+  <programme start="20261115072000 +0100" stop="20261115073000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1805,13 +1691,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/2cf17e23-fc9b-497b-ba0f-46cdca4aaa5c/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115080000 +0100" stop="20261115082300 +0100" channel="SkyTG24.it">
+  <programme start="20261115080000 +0100" stop="20261115082000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115082300 +0100" stop="20261115083000 +0100" channel="SkyTG24.it">
+  <programme start="20261115082000 +0100" stop="20261115083000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1841,19 +1727,19 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115103000 +0100" stop="20261115110200 +0100" channel="SkyTG24.it">
+  <programme start="20261115103000 +0100" stop="20261115110000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115110200 +0100" stop="20261115113200 +0100" channel="SkyTG24.it">
+  <programme start="20261115110000 +0100" stop="20261115113000 +0100" channel="SkyTG24.it">
     <title lang="it">Ep.19</title>
     <desc lang="it">S2026 Ep19 - L'attualita' e i temi piu' interessanti del dibattito pubblico globale, interpretati con il filtro dell'innovazione, cosa sta cambiando e come cambiera' ancora il nostro modo di vivere. Conduce  Alberto Giuffre'</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/3452b9a5-30f4-405a-839a-3dbef14003d2/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115113250 +0100" stop="20261115115950 +0100" channel="SkyTG24.it">
+  <programme start="20261115113000 +0100" stop="20261115120000 +0100" channel="SkyTG24.it">
     <title lang="it">Ep.20</title>
     <desc lang="it">S2026 Ep20 - L'attualita' e i temi piu' interessanti del dibattito pubblico globale, interpretati con il filtro dell'innovazione, cosa sta cambiando e come cambiera' ancora il nostro modo di vivere. Conduce  Alberto Giuffre'</desc>
     <category lang="it">Notiziario</category>
@@ -1865,13 +1751,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/65a502a6-c03f-4a15-b260-4442210fafa6/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115123000 +0100" stop="20261115125800 +0100" channel="SkyTG24.it">
+  <programme start="20261115123000 +0100" stop="20261115125500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115125800 +0100" stop="20261115130000 +0100" channel="SkyTG24.it">
+  <programme start="20261115125500 +0100" stop="20261115130000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
@@ -1883,13 +1769,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/72025f36-48ae-4177-9000-b60681dc9aff/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115133000 +0100" stop="20261115135200 +0100" channel="SkyTG24.it">
+  <programme start="20261115133000 +0100" stop="20261115135000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 13</title>
     <desc lang="it">Le notizie della giornata raccontate con collegamenti live e approfondimenti. Con una finestra sul nostro Paese. E, sempre, il fatto principale del giorno analizzato e commentato da un esperto.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/72025f36-48ae-4177-9000-b60681dc9aff/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115135230 +0100" stop="20261115135930 +0100" channel="SkyTG24.it">
+  <programme start="20261115135000 +0100" stop="20261115140000 +0100" channel="SkyTG24.it">
     <title lang="it">Extra Time</title>
     <desc lang="it">Telegiornale.</desc>
     <category lang="it">Notiziario</category>
@@ -1914,10 +1800,10 @@
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261115153000 +0100" stop="20261115160000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
+    <title lang="it">Ondata di caldo, aria condizonata: Lusso o bene indispensabile?</title>
+    <desc lang="it">S1 Ep137 Ondata di caldo, aria condizonata: Lusso o bene indispensabile? - Un appuntamento quotidiano con la redazione di Sky TG24: un tema al giorno, tra le notizie piu' rilevanti, per leggere l'attualita'.</desc>
     <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
+    <icon src="https://it.imageservice.sky.com/pd-image/6799dd68-2a71-4b3a-9b80-a3e9a04dc4c1/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261115160000 +0100" stop="20261115163000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
@@ -1925,13 +1811,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115163000 +0100" stop="20261115165300 +0100" channel="SkyTG24.it">
+  <programme start="20261115163000 +0100" stop="20261115165000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115165300 +0100" stop="20261115170000 +0100" channel="SkyTG24.it">
+  <programme start="20261115165000 +0100" stop="20261115170000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -1949,19 +1835,19 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115180000 +0100" stop="20261115182800 +0100" channel="SkyTG24.it">
+  <programme start="20261115180000 +0100" stop="20261115182500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115182800 +0100" stop="20261115185800 +0100" channel="SkyTG24.it">
+  <programme start="20261115182500 +0100" stop="20261115185500 +0100" channel="SkyTG24.it">
     <title lang="it">Ep.46</title>
     <desc lang="it">S3 Ep46 - Uno spazio per approfondire la stretta attualita' e per raccontare i fatti sfuggiti dai radar, con ospiti in studio e sevizi dedicati.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/512917bb-875f-4a39-b14d-b0692ce3a0db/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115185800 +0100" stop="20261115190000 +0100" channel="SkyTG24.it">
+  <programme start="20261115185500 +0100" stop="20261115190000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
@@ -1973,31 +1859,31 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115193000 +0100" stop="20261115195600 +0100" channel="SkyTG24.it">
+  <programme start="20261115193000 +0100" stop="20261115195500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115195600 +0100" stop="20261115195800 +0100" channel="SkyTG24.it">
+  <programme start="20261115195500 +0100" stop="20261115200000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/1435d750-95d0-4ad2-86df-5a12a9145183/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115195800 +0100" stop="20261115203000 +0100" channel="SkyTG24.it">
+  <programme start="20261115200000 +0100" stop="20261115203000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 20</title>
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e analisi. Interviste e inchieste esclusive, i principali fatti del giorno aggiornati in tempo reale.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/49fecad2-0545-424d-a0d4-e97561f7a103/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115203000 +0100" stop="20261115205200 +0100" channel="SkyTG24.it">
+  <programme start="20261115203000 +0100" stop="20261115205000 +0100" channel="SkyTG24.it">
     <title lang="it">Ore 20</title>
     <desc lang="it">Telegiornale in diretta. Le notizie dall'Italia e dal mondo con collegamenti live, approfondimenti e analisi. Interviste e inchieste esclusive, i principali fatti del giorno aggiornati in tempo reale.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/49fecad2-0545-424d-a0d4-e97561f7a103/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115205230 +0100" stop="20261115205930 +0100" channel="SkyTG24.it">
+  <programme start="20261115205000 +0100" stop="20261115210000 +0100" channel="SkyTG24.it">
     <title lang="it">Extra Time</title>
     <desc lang="it">Telegiornale.</desc>
     <category lang="it">Notiziario</category>
@@ -2010,14 +1896,14 @@
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261115213000 +0100" stop="20261115220000 +0100" channel="SkyTG24.it">
-    <title lang="it">TG24 mezz'ora</title>
-    <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
+    <title lang="it">Che Mondo Lasciamo Ai Nostri Figli?</title>
+    <desc lang="it">S1 Ep138 Riconoscimento facciale e IA: Quali sono i limiti giuridici? - L'accelerata del governo sull'utilizzo dell'AI e dei sistemi di riconoscimento facciale da parte delle forze dell'ordine agita la politica. Scopriamo in cosa consiste il decreto legislativo che adegua la normativa nazionale alle regole europee.</desc>
     <category lang="it">Notiziario</category>
-    <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
+    <icon src="https://it.imageservice.sky.com/pd-image/9f68a473-44d6-41cb-8365-2da981b561d5/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261115220000 +0100" stop="20261115221500 +0100" channel="SkyTG24.it">
-    <title lang="it">Countdown - Dallo Spazio Alla Terra Stg.6 Ep.1 - 14/11/2026</title>
-    <desc lang="it">S6 Ep1 Countdown - Dallo Spazio Alla Terra Stg.6 Ep.1 - 14/11/2026 - Si analizza perche' lo Spazio e' diventato cosi' importante per la Terra. Tra gli ospiti: astronauti, esperti, premi Nobel, ingegneri, astrofisici e leader d'impresa, per conoscere le realta' industriali piu' innovative del settore spaziale.</desc>
+    <title lang="it">Ep.1</title>
+    <desc lang="it">S6 Ep1 - Si analizza perche' lo Spazio e' diventato cosi' importante per la Terra. Tra gli ospiti: astronauti, esperti, premi Nobel, ingegneri, astrofisici e leader d'impresa, per conoscere le realta' industriali piu' innovative del settore spaziale.</desc>
     <category lang="it">Scienza</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f4535807-185e-4e40-8bfd-c166470b4bd5/16-9/1024?territory=IT" />
   </programme>
@@ -2027,13 +1913,13 @@
     <category lang="it">Magazine Cultura</category>
     <icon src="https://it.imageservice.sky.com/pd-image/0f6644a6-d37e-457e-b8d8-c2a043d98696/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115223000 +0100" stop="20261115225800 +0100" channel="SkyTG24.it">
+  <programme start="20261115223000 +0100" stop="20261115225500 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115225800 +0100" stop="20261115230000 +0100" channel="SkyTG24.it">
+  <programme start="20261115225500 +0100" stop="20261115230000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 Preview</title>
     <desc lang="it">TG24 Preview</desc>
     <category lang="it">Notiziario</category>
@@ -2045,13 +1931,13 @@
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115233000 +0100" stop="20261115235300 +0100" channel="SkyTG24.it">
+  <programme start="20261115233000 +0100" stop="20261115235000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
     <desc lang="it">Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/f931cf17-7135-4dce-a3e8-ce21b9697d83/16-9/1024?territory=IT" />
   </programme>
-  <programme start="20261115235300 +0100" stop="20261116000000 +0100" channel="SkyTG24.it">
+  <programme start="20261115235000 +0100" stop="20261116000000 +0100" channel="SkyTG24.it">
     <title lang="it">Sky Meteo24</title>
     <desc lang="it">Previsioni meteo dettagliate e sempre aggiornate 24 ore al giorno. Le previsioni regionali, nazionali ed internazionali.</desc>
     <category lang="it">News</category>
@@ -2380,6 +2266,12 @@
     <desc lang="it">Telegiornale.</desc>
     <category lang="it">Notiziario</category>
     <icon src="https://it.imageservice.sky.com/pd-image/1fbba515-6652-474a-93db-53c0cc2d631f/16-9/1024?territory=IT" />
+  </programme>
+  <programme start="20261116210000 +0100" stop="20261116214500 +0100" channel="SkyTG24.it">
+    <title lang="it">Stefania Andreoli</title>
+    <desc lang="it">S7 Ep26 Stefania Andreoli - La psicoterapeuta e scrittrice parla della sua carriera, dei libri sull'ansia e sulla genitorialita'.</desc>
+    <category lang="it">Magazine</category>
+    <icon src="https://it.imageservice.sky.com/pd-image/d25fa2ed-2d2f-4b4a-8ec4-7494f7f5fed7/16-9/1024?territory=IT" />
   </programme>
   <programme start="20261116214500 +0100" stop="20261116220000 +0100" channel="SkyTG24.it">
     <title lang="it">TG24 mezz'ora</title>
